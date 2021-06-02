@@ -1,0 +1,147 @@
+body {
+    background: #0d0d0d;
+    color: white;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 8vh auto;
+    width: 80vw;
+    height: 76vh;
+    vertical-align: middle;
+}
+
+h1 {
+    font-weight: bold;
+    color: #fccc8e;
+    font-size: 36px;
+}
+
+h2 {
+    color: #f8f3aa;
+}
+
+#header {
+    text-align: center;
+    font-size: 24px;
+}
+
+#page p, #page h2 {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    line-height: 2em;
+}
+
+#page ul {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    list-style-position: inside;
+    padding-right: 40px;
+}
+
+#page input {
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+    background: #2b2b2b;
+    color: #fccc8e;
+    border: none;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    padding: 6px 12px;
+}
+
+#page input:hover {
+    color: #f8f3aa;
+}
+
+#page table {
+  text-align: center;
+  margin: auto;
+  border: medium solid #fccc8e;
+  border-collapse: collapse;
+    padding: 0;
+}
+
+#page table td {
+    border: thin solid #fccc8e;
+    background-color: #2b2b2b;
+    margin: 0;
+}
+
+#page table input {
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    color: #2b2b2b;
+}
+
+#page table input:hover {
+    color: #2b2b2b;
+}
+
+#page table img {
+    margin: 0;
+}
+
+#affichage {
+    display: inline-flex;
+    margin: auto;
+    width: 100%;
+}
+
+#plateau {
+    width: 60%;
+    margin: auto;
+}
+
+#info {
+    width: 40%;
+    margin: auto;
+    margin-left: -250px;
+    text-align: center;
+}
+
+#vide {
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+#footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 770px){
+    #info{
+        width: auto;
+        margin-left: auto;
+        margin-left: 3vw;
+    }
+    #plateau{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #plateau{
+        margin: 0;
+    }
+    #page table {
+        margin-left: 5vw;
+    }
+    #page table input, #page table img, #vide {
+        height: 13.8vh;
+        width: 21.8vw;
+    }
+    
+    #info {
+        margin-top: 50vh;
+        margin-left: -37vw;
+        width: auto;
+    }
+}

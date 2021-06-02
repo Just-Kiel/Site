@@ -1,0 +1,810 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background: #0d0d0d;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: #0d0d0d;
+}
+
+::-webkit-scrollbar {
+    width: 0.7vw;
+    background: #fefdee;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fccc8e;
+}
+
+#left p {
+    padding-left: 7.5vw !important;
+}
+
+
+/*css des H1*/
+.portfolio h1 {
+    font-size: 2.25em;
+    color: #fccc8e;
+    font-weight: 700;
+    margin-top: -7vh;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#intro h1 {
+    font-size: 2.5em;
+}
+
+
+/*css des H2*/
+h2 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #fccc8e;
+    padding: 2.6vh 0 0 7.5vw;
+    margin: 0;
+}
+
+#intro h2 {
+    font-weight: 400;
+    padding: 0;
+    color: #fff;
+}
+
+/*css des H3*/
+.diplome h3 {
+    width: 18.3vw;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 5.2vh 0 0 0;
+}
+
+/*css des p*/
+p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.portfolio p, .mentions {
+    margin-bottom: 4vh;
+    margin-top: 2vh;
+    color: #fff;
+    text-align: center;
+}
+
+.mentions {
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio a {
+    text-decoration: none;
+    font-size: 1.8em !important;
+    color: #f8f3aa;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.8);
+    display: block;
+}
+
+.mentions a {
+    text-decoration: none;
+    color: #f8f3aa;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.8);
+}
+
+.portfolio a:hover, .mentions a:hover{
+    color:  #fccc8e;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.9);
+}
+
+.portfolio .button, .mentions .button {
+    border-radius: 15px;
+    margin-top: 5vh;
+    width: 20vw;
+    text-align: center;
+    border: none;
+    color: #fccc8e;
+    border: 1.5px solid #f8f3aa;
+    background: #0d0d0d;
+    cursor: pointer;
+}
+
+.portfolio .button:hover, .mentions .button:hover {
+    text-decoration: none;
+    color: #0d0d0d;
+    border: 1.5px solid #fccc8e;
+    background: #fccc8e;
+}
+
+#a_propos p,
+#portfolio p {
+    margin: 0;
+    padding: 2.9vh 0 6.5vh 7.5vw;
+    width: 43.9vw;
+}
+
+#a_propos p {
+        padding: 2.9vh 0 6.5vh;
+}
+
+#intro p {
+    width: 35.1vw;
+    color: #f8f3aa;
+}
+
+.galerie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 6vh 32vw 0 25vw;
+    height: 55vh;
+    align-content: center;
+}
+
+.illustrator {
+    margin: 10vh 32vw 0 30vw;
+}
+
+#center {
+    margin: 0;
+    align-content: flex-start;
+}
+
+#colonne {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0;
+}
+
+#colonne img {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.left img {
+    float: right;
+}
+
+.container {
+    margin: auto;
+    min-width: 320px;
+}
+
+#header {
+    background: url(images/head-test.jpg) top right no-repeat;
+    color: #fff;
+    background-size: auto 100%;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+#header img {
+    position: relative;
+    left: 8vw;
+    top: 10vh;
+    transform: scale(0.9);
+    animation-direction: alternate;
+    animation-duration: 1.3s;
+    animation-name: animlogo;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animlogo {
+    0% {
+        transform: scale(0.75);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animlogo-responsive {
+    0% {
+        transform: scale(0.3);
+    }
+
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+#navbar #menu {
+    display: flex;
+    float: right;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#navbar ul {
+    padding: 0 8% 0 0;
+    margin: 0;
+    margin-top: -8%;
+    list-style-type: none;
+}
+
+#navbar a {
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #fccc8e;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.9);
+}
+
+#navbar a:hover {
+    color: #f8f3aa;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+#intro {
+    width: 60vw;
+    padding: 12vh 0 0 8vw;
+    line-height: 1.7em;
+    font-size: 1.5em;
+}
+
+#intro span {
+    color: #fccc8e;
+}
+
+
+#intro .bouton a {
+    padding: 15px;
+    /*pas la peine de convertir*/
+}
+
+#intro .bouton {
+    width: 160px;
+    /*pas la peine de convertir*/
+}
+
+.bouton a,
+.button {
+    display: block;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 1em;
+    margin: 0;
+    background: #2b2b2b;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-family: 'Palanquin Dark', sans-serif;
+    color: #fccc8e;
+    font-weight: 700;
+    border-radius: 35px;
+    transition: 0.5s ease-in-out;
+}
+
+.bouton a:hover {
+    color: #f8f3aa;
+    transition: 0.5s ease-in-out;
+}
+
+#a_propos,
+#portfolio,
+#contact {
+    background: #fefdee;
+    background-size: auto 100%;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+#contact {
+    background: #0d0d0d;
+}
+
+#contact_me {
+    display: flex;
+}
+
+
+
+#myself {
+    height: 55vh;
+    display: flex;
+}
+
+#left {
+    width: 60vw;
+    margin-top: 5vh;
+}
+
+#right {
+    width: 35vw;
+    padding: 9% 21%;
+}
+
+#right .button {
+    background: #fefdee;
+}
+
+#right .button:hover {
+    background: #fccc8e;
+    color: #0d0d0d;
+}
+
+.info {
+    width: 100vw;
+    margin: auto;
+    height: 45vh;
+    background-color: #fef6e0;
+}
+
+.examen {
+    display: flex;
+    justify-content: center;
+}
+
+.diplome {
+    margin: 0;
+    float: left;
+    padding: 0;
+    width: 25%;
+    height: 26vh;
+}
+
+.diplome p {
+    font-size: 1em;
+    margin: 0;
+    width: 22vw;
+    padding: 0;
+}
+
+
+
+.diplome a {
+    text-decoration: none;
+    color: #0d0d0d;
+}
+
+.diplome h3:hover {
+    color: #fccc8e;
+}
+
+#rsn {
+    margin: 3vh auto 0;
+    text-align: center;
+    float: none;
+    width: 36.6vw;
+}
+
+
+
+#rsn ul {
+    padding: 2vh 0 0 0;
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    width: 6vw;
+}
+
+#rsn li {
+    margin: auto;
+}
+
+#rsn img {
+    transform: scale(1);
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+#rsn img:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+#ligne1,
+#ligne2 {
+    margin: -8px 0;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#ligne2 {
+    margin: -8px 8px;
+}
+
+#portfolio p {
+    padding-bottom: 2.6vh;
+}
+
+#images {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3vh;
+}
+
+.opacity-color img {
+    transition: 0.5s ease-in-out;
+    opacity: 0.7;
+    cursor: pointer;
+    transform: scale(0.85);
+}
+
+.opacity-color img:hover {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#contact p {
+    font-weight: 400;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 2.9vh 0 6.5vh 7.5vw;
+    width: 44vw;
+    color: #fccc8e;
+    font-size: 1em;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: auto;
+    height: 8vh;
+    background-color: #171717;
+}
+
+#contact_me {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright p {
+    color: #fefdee;
+    padding: 0;
+    width: 100%;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: #fefdee;
+}
+
+#rsn p {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fccc8e;
+    padding: 1.3vh 0 0 0 !important;
+    margin: auto !important;
+    width: 36.6vw !important;
+}
+
+#mrsn {
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+    width: 36.6vw;
+
+}
+
+#mrsn ul {
+    padding: 2vh 0 0 0;
+    margin: auto;
+    list-style-type: none;
+    display: flex;
+    width: 5.9vw;
+}
+
+#mrsn li {
+    margin: auto;
+}
+
+#mrsn img {
+    transform: scale(1);
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+#mrsn img:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+#mrsn p {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fccc8e;
+    padding: 1.3vh 0 0 0 !important;
+    margin: auto !important;
+    width: 36.6vw;
+    margin-top: 25vh;
+}
+
+.form {
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+    display: flex;
+    font-family: 'Palanquin Dark', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form input,
+.form textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b2b2b;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    border: #353535 solid 2px;
+    padding-left: 1vw;
+}
+
+
+.form input[type="text"]:first-child {
+    border: #8799a3 solid 2px;
+    width: 19.4vw;
+    height: 6.6vh;
+}
+
+.form textarea {
+    resize: none;
+    width: 30.1vw;
+    height: 11.7vh;
+}
+
+.form input[type="email"] {
+    width: 19.4vw;
+    height: 6.6vh;
+}
+
+.name::placeholder {
+    font-family: 'Palanquin Dark', sans-serif;
+    color: #fff;
+}
+
+.button {
+    border-radius: 15px;
+    width: 11.9vw;
+    border: none;
+    color: #fccc8e;
+    border: 1.5px solid #f8f3aa;
+    background: #0d0d0d;
+    cursor: pointer;
+}
+
+#portfolio .button {
+    margin: auto;
+    background-color: #fefdee;
+    color: #fccc8e;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.8);
+}
+
+#portfolio .button:hover {
+    margin: auto;
+    background-color: #fccc8e;
+    color: #0d0d0d;
+    transition: 0.5s ease-in-out;
+    transform: scale(0.9);
+}
+
+#envoi {
+    color: #fccc8e;
+}
+
+#envoi:hover {
+    color: #0d0d0d;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #0d0d0d;
+    border: 1.5px solid #fccc8e;
+    background: #fccc8e;
+}
+
+@media only screen and (max-width: 770px){
+    nav{
+        visibility: hidden;
+    }
+
+    #intro {
+        width: auto;
+        margin: auto;
+        line-height: 2.7em;
+        font-size: 1.2em;
+        position: absolute;
+        bottom: 5vh;
+    }
+    
+    #a_propos, #myself, .info, #portfolio{
+        height: auto;
+    }
+    
+    #rsn{
+        margin-top: 5vh;
+    }
+    
+    #rsn p{
+        font-size: 1em;
+    }
+    
+    #rsn ul{
+        font-size: 1em;
+        padding: 1vh 0 0 0;
+        margin-right: 45%;
+    }
+
+    #intro p,
+    #left, .diplome a p, .diplome p, .diplome h3 {
+        width: auto !important;
+    }
+    
+    .diplome{
+        padding: 10px;
+    }
+    
+    .button {
+        width: 90%;
+    }
+    
+    #right{
+        padding: 25% 10%;
+        width: auto;
+    }
+    
+    #rsn li, #mrsn li{
+        padding-right: 15px;
+    }
+    
+    #ligne1, #ligne2{
+        flex-direction: column;
+        padding: 0;
+        margin: auto;
+        width: auto;
+    }
+    #ligne2 a, #ligne1 a{
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 0.75em;
+    }
+
+    #header {
+        background-size: cover;
+        background-position: center;
+    }
+
+    #header img {
+        left: 0vw;
+        top: 0vh;
+        animation-name: animlogo-responsive;
+    }
+
+    #intro {
+        width: auto;
+        padding: 0;
+        margin: auto;
+        text-align: center;
+        line-height: 2.7em;
+        font-size: 1.2em;
+        position: absolute;
+        bottom: 5vh;
+    }
+
+    #intro p,
+    #left, .diplome p, .diplome h3 {
+        width: auto;
+    }
+    
+    .diplome p{
+        margin: auto;
+    }
+
+    #a_propos,
+    #portfolio,
+    #contact, .info, .diplome, #contact_me, #myself {
+        height: auto;
+        margin-bottom: 1vh;
+    }
+    
+    .diplome{
+        margin: auto;
+        width: 70%;
+    }
+    
+    .diplome h3{
+        padding: 1.2vh 0 0 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    #myself, .examen {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 25vw;
+        margin: auto;
+    }
+
+    #a_propos p,
+    #portfolio p {
+        margin: auto;
+        padding: 0.9vh 0 0.5vh 0;
+        width: 85vw;
+    }
+    #right, #mrsn p{
+        padding: 0;
+        margin: auto;
+    }
+    
+    #rsn {
+        margin-top: 0;
+        width: 67.6vw;
+    }
+    #ligne1, #ligne2, #contact_me{
+        flex-direction: column;
+        padding: 0;
+        margin: auto;
+        width: auto;
+    }
+    #ligne2 a, #ligne1 a{
+        margin: auto;
+    }
+    #contact p{
+        padding: 0.9vh 0 2.5vh 7.5vw !important;
+    }
+    #mrsn p{
+        margin-top: 2vh;
+    }
+    .name, .mail {
+        width: 30.4vw;
+    }
+    .message{
+        width: 45vw;
+    }
+    #mrsn ul, #rsn ul {
+        align-content: space-around;
+        width: 15.9vw;
+    }
+}
